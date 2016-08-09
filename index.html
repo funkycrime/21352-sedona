@@ -5,8 +5,144 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <header class="main_header">
+      <div class="comtainer">
+        <nav class="main_navigation">.
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Фото и видео</a>
+            </li>
+            <li>
+              <img src="http://placehold.it/150x100" alt="Городок Седона">
+            </li>
+            <li>
+              <a href="#">Карта штата</a>
+            <li>
+              <a href="#">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+    <main>
+      <div class="container">
+        <div class="index_logo">
+          <img src="http://placehold.it/150x100" alt="Седона">
+          <h2> Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </div>
+
+        <section class="features">
+          <div class="line_one">
+            <div class="reason_type_one">
+              <h3>Настоящий городок</h3>
+              <p>- №1 -<br>
+                Седона - не аттракцион для туристов, там течет своя жизнь
+              </p>
+            </div>
+            <img class="sedona_reason_one" src="http://placehold.it/150x100" alt="Седона - не аттракцион для туристов">
+          </div>
+          <div class="line_two">
+            <div class="sedona_accommodation">
+              <h3>Жилье</h3>
+              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </div>
+            <div class="sedona_food">
+              <h3>Еда</h3>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </div>
+            <div class="sedona_souvenirs">
+              <h3>Сувениры</h3>
+              <p>Не только китайского, но и местного производства!</p>
+            </div>
+          </div>
+          <div class="line_three">
+            <img class="sedona_reason_two" src="http://placehold.it/150x100" alt="Мост Дьявола">
+            <div class="reason_type_two">
+              <h3>Там есть Мост Дьявола</h3>
+              <p>- №2 -<br>
+                Да, по нему можно пройти! Если конечно Вы осмелитесь.
+              </p>
+            </div>
+          </div>
+          <div class="line_four">
+            <div class="sedona_space">
+              <h3>Небольшая площадь</h3>
+              <p>- №3 -<br>
+                Все достопримечательности находятся очень близко
+              </p>
+            </div>
+            <div class="sedona_road">
+              <h3>Красивая дорога</h3>
+              <p>- №4 -<br>
+                Ехать в Седону из Лас-Вегаса совсем не скучно!
+              </p>
+            </div>
+            <div class="sedona_tourists">
+              <h3>Мало туристов</h3>
+              <p>- №5 -<br>
+                Большинство едет в Гранд Каньон и толпится там
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="sedona_interested">
+          <h1>Заинтересовались?</h1>
+          <p>Укажите предполагаемую дату поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+          <div class="hotel_search">
+            <h3>Поиск гостиницы в Седоне</h3>
+          </div>
+        </section>
+
+        <section class="booking">
+          <div class="hotel_booking">
+            <form action="#" method="post">
+              <label for id="check_in_date">Дата заезда:</label>
+              <input type="text" name="date_in" id="check_in_date"><br>
+              <label for id="check_out_date">Дата выезда:</label>
+              <input type="text" name="date_out" id="check_out_date"><br>
+              <div class="adults_number">
+                <span class="minus">-</span>
+                <label for id="adults_number">Взрослые</label>
+                <input type="text" name="adults" id="adults_number" value="2">
+                <span class="plus">=</span>
+              </div>
+              <div class="children_select">
+                <span class="minus">-</span>
+                <label for id="children_in">Дети:</label>
+                <input type="text" name="children" id="children_in" value="0"><br>
+                <span class="plus">+</span>
+              </div>
+              <input type="submit" value="Найти">
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="main_footer">
+      <div class="container">
+        <section class="link">
+          <a href="#">#VISITSEDONA</a>
+        </section>
+        <section class="social_links">
+          <a href="#" class="social_tw">Твиттер</a>
+          <a href="#" class="social_fb">Фейсбук</a>
+          <a href="#" class="social_yt">YouTube</a>
+        </section>
+        <section class="copyright">
+          Website by
+          <a href="#"><img src="http://placehold.it/150x100" alt="HTML Academy"></a>
+        </section>
+      </div>
+    </footer>
+
+    <!--<p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p> -->
 
   </body>
 </html>
