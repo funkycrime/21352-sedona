@@ -1,0 +1,15 @@
+body {
+  font-family: "PT Sans", "PT Sans", sans-serif;
+  font-size: 14pt;
+  line-height: 26pt;
+  color: #000000;
+  font-weight: bold;
+}
+
+.short_description {
+  font-size: 21px;
+}
+
+p {
+  font-weight: normal;
+}
