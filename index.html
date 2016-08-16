@@ -18,11 +18,9 @@
               <a href="#">Фото и видео</a>
             </li>
             <li>
-              <div class="logo">
-                <a href="index.html">
-                  <img src="img/main-menu-logo.png" width="138" height="70" title="Логотип City Sedona" alt="Логотип City Sedona">
-                </a>
-              </div>
+              <a class="logo" href="index.html">
+                <img src="img/main-menu-logo.png" width="138" height="70" title="Логотип City Sedona" alt="Логотип City Sedona">
+              </a>
             </li>
             <li>
               <a href="#">Карта штата</a>
@@ -36,15 +34,14 @@
 
       <main>
         <div class="sedona">
-          <img src="img/main-bg.jpg" alt="Седона">
-          <img src="img/main-bg-bottom.png" alt="Седона">
+          <img src="img/logo.png" alt="Седона">
         </div>
         <div class="short_desription">
-          <p> Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="strong"> Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
 
-        <div class="row">
+        <div class="row blue">
           <div class="col_1">
             <p class="strong">Настоящий городок</p>
             <p>- №1 -</p>
@@ -68,7 +65,7 @@
             <p>Не только китайского, но и местного производства!</p>
           </div>
         </div>
-        <div class="row">
+        <div class="row blue">
           <div class="promo">
             <img src="img/reason-four.jpg" alt="Мост Дьявола">
           </div>
@@ -78,7 +75,7 @@
             <p>Да, по нему можно пройти! Если конечно Вы осмелитесь.</p>
           </div>
         </div>
-        <div class="row">
+        <div class="row gray">
           <div class="col_1">
             <p class="strong">Небольшая площадь</p>
             <p>- №3 -</p>
@@ -100,27 +97,25 @@
           <p class="strong">Заинтересовались?</p>
           <p>Укажите предполагаемую дату поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
           <a id="search_trigger" href="#">Поиск гостиницы в Седоне</a>
-          <div class="dates">
-            <form action="#" method="post">
-              <label for="check_in_date">Дата заезда:</label>
-              <input type="text" name="date_in" id="check_in_date"><br>
-              <label for="check_out_date">Дата выезда:</label>
-              <input type="text" name="date_out" id="check_out_date"><br>
-              <div class="adults_number">
-                <label for="adults_number">Взрослые</label>
-                <span class="minus">-</span>
-                <input type="text" name="adults" id="adults_number" value="2">
-                <span class="plus">+</span>
-              </div>
-              <div class="children_select">
-                <label for="children_in">Дети:</label>
-                <span class="minus">-</span>
-                <input type="text" name="children" id="children_in" value="0">
-                <span class="plus">+</span>
-              </div>
-              <input type="submit" value="Найти">
-            </form>
-          </div>
+          <form action="#" method="post">
+            <label for="check_in_date">Дата заезда:</label>
+            <input type="text" name="date_in" id="check_in_date"><br>
+            <label for="check_out_date">Дата выезда:</label>
+            <input type="text" name="date_out" id="check_out_date"><br>
+            <div class="adults_number">
+              <label for="adults_number">Взрослые</label>
+              <span class="minus">-</span>
+              <input type="text" name="adults" id="adults_number" value="2">
+              <span class="plus">+</span>
+            </div>
+            <div class="children_select">
+              <label for="children_in">Дети:</label>
+              <span class="minus">-</span>
+              <input type="text" name="children" id="children_in" value="0">
+              <span class="plus">+</span>
+            </div>
+            <input type="submit" value="Найти">
+          </form>
         </section>
       </main>
 
