@@ -1,15 +1,51 @@
 body {
   font-family: "PT Sans", "PT Sans", sans-serif;
-  font-size: 14pt;
-  line-height: 26pt;
+  font-size: 14px;
+  line-height: 26px;
   color: #000000;
+  font-weight: normal;
+}
+
+ul {
   font-weight: bold;
 }
 
-.short_description {
+.sedona {
+  background-image: url("../img/main-bg.jpg"), url("../img/main-bg-bottom.png");
+}
+
+p.strong {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.sedona p.strong {
+  line-height: 26px;
+}
+
+.row {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.row.blue {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.row p.strong {
   font-size: 21px;
 }
 
-p {
-  font-weight: normal;
+.row.gray {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+
+
+
+.hotels {
+  background-image: url("../img/filter-bg.jpg");
 }
