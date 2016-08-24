@@ -17,8 +17,8 @@
             <li>
               <a href="#">Фото и видео</a>
             </li>
-            <li>
-              <a class="logo" href="index.html">
+            <li class="logo">
+              <a href="index.html">
                 <img src="img/main-menu-logo.png" width="138" height="70" title="Логотип City Sedona" alt="Логотип City Sedona">
               </a>
             </li>
@@ -73,12 +73,19 @@
             </div>
           </section>
           <section class="column_3">
-            <div class="strong">
+            <div class="price_selection">
               <p>Стоимость в сутки (Р):</p>
-              <div class="column_one">От 0</div>
-              <div class="column_two">До 3000</div>
-              <input type="range" min="0" max="3000" step="2500" value="2500">
-              <input type="submit" value="Показать">
+              <div class="range_filter">
+                <div class="price_controls">
+                  от <input class="min_price" type="text" value="0">
+                  до <input class="max_price" type="text" value="3000">
+                </div>
+                <div class="range_controls">
+                  <div class="scale"><div style="margin-left:0;width:317px;" class="bar"></div></div>
+                  <div class="toggle min_toggle"></div>
+                  <div class="toggle max_toggle"></div>
+                </div>
+              </div>
             </div>
           </section>
         </form>
@@ -95,49 +102,67 @@
           </div>
 
           <div class="hotel_preview">
-            <a href="#"><img src="img/amara-resort.jpg" alt="AMARA RESORT & SPA"></a>
-            <a href="#"><img src="img/quail-inn.jpg" alt="DESERT QUAIL INN"></a>
-            <a href="#"><img src="img/villas-at-poco.jpg" alt="VILLAS AT POCO DIABLO"></a>
-          </div>
-
-          <div class="hotel_info">
-            <div class="hotel">
-              <h2>AMARA RESORT & SPA</h2>
-              <span>Гостиница</span>
-              <span>От 3500 Р.</span>
-              <a class="more" href="#">Подробнее</a>
-              <a class="book" href="#">Забронировать</a>
+            <div class="hotel_amara">
+              <div class="hotel_image">
+                <a href="#"><img src="img/amara-resort.jpg" alt="AMARA RESORT & SPA"></a>
+              </div>
+              <div class="hotel_info">
+                <h2>AMARA RESORT & SPA</h2>
+                <span>Гостиница</span>
+                <span>От 3500 Р.</span>
+                <a class="more" href="#">Подробнее</a>
+                <a class="book" href="#">Забронировать</a>
+              </div>
+              <div class="hotel_rate">
+                <div class="stars">
+                  <span class="icon_star"></span> <!--Звездочки -->
+                </div>
+                <div class="rating">Рейтинг: 8,5</div>
+              </div>
             </div>
 
-            <div class="hotel">
-              <h2>DESERT QUAIL INN</h2>
-              <span>Мотель</span>
-              <span>От 2000 Р.</span>
-              <a class="more" href="#">Подробнее</a>
-              <a class="book" href="#">Забронировать</a>
+            <div class="hotel_quail">
+              <div class="hotel_image">
+                <a href="#"><img src="img/quail-inn.jpg" alt="DESERT QUAIL INN"></a>
+              </div>
+              <div class="hotel_info">
+                <h2>DESERT QUAIL INN</h2>
+                <span>Мотель</span>
+                <span>От 2000 Р.</span>
+                <a class="more" href="#">Подробнее</a>
+                <a class="book" href="#">Забронировать</a>
+              </div>
+              <div class="hotel_rate">
+                <div class="stars">
+                  <span class="icon_star"></span> <!--Звездочки -->
+                </div>
+                <div class="rating">Рейтинг: 8,9</div>
+              </div>
             </div>
 
-            <div class="hotel">
-              <h2>VILLAS AT POCO DIABLOS</h2>
-              <span>Апартаменты</span>
-              <span>От 4000 Р.</span>
-              <a class="more" href="#">Подробнее</a>
-              <a class="book" href="#">Забронировать</a>
+            <div class="hotel_poco">
+              <div class="hotel_image">
+                <a href="#"><img src="img/villas-at-poco.jpg" alt="VILLAS AT POCO DIABLO"></a>
+              </div>
+              <div class="hotel_info">
+                <h2>VILLAS AT POCO DIABLOS</h2>
+                <span>Апартаменты</span>
+                <span>От 4000 Р.</span>
+                <a class="more" href="#">Подробнее</a>
+                <a class="book" href="#">Забронировать</a>
+              </div>
+              <div class="hotel_rate">
+                <div class="stars">
+                  <span class="icon_star"></span> <!--Звездочки-->
+                </div>
+                <div class="rating">Рейтинг: 9,2</div>
+              </div>
             </div>
-          </div>
-
-          <div class="rate">
-            <div class="stars">
-              <span class="icon_star"></span> <!--Звездочки -->
-              <span class="icon_star"></span> <!--Звездочки -->
-              <span class="icon_star"></span> <!--Звездочки-->
-            </div>
-            <div class="rating">Рейтинг: 8,5</div>
-            <div class="rating">Рейтинг: 8,9</div>
-            <div class="rating">Рейтинг: 9,2</div>
           </div>
         </section>
       </main>
+
+
 
       <footer>
         <section class="link">

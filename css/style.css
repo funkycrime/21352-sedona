@@ -1,51 +1,276 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: "PT Sans", "PT Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 14px;
   line-height: 26px;
   color: #000000;
   font-weight: normal;
+  background-color: #f2f2f2;
+  margin-top: -15px;
 }
 
-ul {
+.container {
+  min-width: 768px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+}
+
+.main_header ul {
+  height: 43px;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.main_header li {
+  display: inline-block;
+  width: 20%;
+  text-transform: uppercase;
+  float: left;
+  padding-top: 11px;
+  padding-bottom: 23px;
   font-weight: bold;
 }
 
+.main_header .right_nav {
+  text-align: right;
+}
+
+.logo img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.main_header::after {
+  clear: both;
+}
+
 .sedona {
-  background-image: url("../img/main-bg.jpg"), url("../img/main-bg-bottom.png");
+  background-image: url("../img/main-bg.jpg");
+  /*min-height: 450px;*/
+  min-height: 508px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.sedona:after {
+  content: "";
+  height: 57px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: url("../img/main-bg-bottom.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.sedona img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.sedona::after {
+  clear: both;
+}
+
+p {
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+  width: 282px;
 }
 
 p.strong {
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
+  color: #000000;
 }
 
-.sedona p.strong {
+.short_description .strong {
   line-height: 26px;
 }
 
 .row {
   background-color: #ffffff;
-  color: #000000;
+  display: inline-block;
+  min-height: 256px;
+  width: 100%;
+  clear: both;
 }
 
 .row.blue {
+  display: inline-block;
+  float: left;
   color: #ffffff;
   background-color: #81b3d2;
-}
-
-.row p.strong {
-  font-size: 21px;
 }
 
 .row.gray {
   background-color: #eeeeee;
   color: #000000;
+  display: inline-block;
+  float: left;
+}
+
+.col_1 {
+  width: 33%;
+  float: left;
+}
+
+.promo {
+  float: left;
+  width: 67%;
+  margin-right: 0;
+  position: relative;
+  overflow: hidden;
+  height: 256px;
+}
+
+img.promo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: auto;
+  width: 100%;
+}
+
+.life {
+  background-image: url("../img/hotels.png");
+  background-repeat: no-repeat;
+  padding-top: 165px;
+  padding-bottom: 86px;
+}
+
+.food {
+  background-image: url("../img/food.png");
+  background-repeat: no-repeat;
+  padding-top: 165px;
+  padding-bottom: 86px;
+}
+
+.souvenirs {
+  background-image: url("../img/souvenirs.png");
+  background-repeat: no-repeat;
+  padding-top: 165px;
+  padding-bottom: 86px;
+}
+
+.search {
+  display: block;
+  background-color: #ffffff;
+  float: left;
+  width: 100%;
+}
+
+.search .strong {
+  font-size: 30px;
+}
+
+.search p {
+  display: block;
+  width: 433px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 24px;
+}
+
+.search a {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 206px;
+  height: 87px;
+  width: 572px;
+  background-color: #766357;
+  text-transform: uppercase;
+  font-size: 21px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+}
+
+form {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  height: 395px;
+  background-color: #ffffff;
+  width: 568px;
+  height: 395px;
+}
+
+label {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+input {
+  width: 346px;
+  height: 38px;
+}
+
+.submit {
+  width: 458px;
+  height: 58px;
+  background-color: #81b3d2;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.map {
+  display: block;
+  background-image: url("../img/map.jpg");
+  min-height: 473px;
+}
+
+.footer {
+  background-color: #ffffff;
+  height: 120px;
+  min-width: 768px;
+  max-width: 1200px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
 
+/*
 
-.hotels {
+footer {
+  display: block;
+  width: 100%;
+  float: left;
+}*/
+
+
+/*.hotels {
   background-image: url("../img/filter-bg.jpg");
-}
+}*/
