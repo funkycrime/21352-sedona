@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
 
   <body>
@@ -17,16 +18,16 @@
             <li>
               <a href="#">Фото и видео</a>
             </li>
-            <li>
+            <li class="image">
               <a class="logo" href="index.html">
                 <img src="img/main-menu-logo.png" width="138" height="70" title="Логотип City Sedona" alt="Логотип City Sedona">
               </a>
             </li>
-            <li>
+            <li class="right_nav">
               <a href="#">Карта штата</a>
             </li>
-            <li>
-              <a href="#">Гостиницы</a>
+            <li class="right_nav">
+              <a href="sedona-hotels.html">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -36,12 +37,12 @@
         <div class="sedona">
           <img src="img/logo.png" alt="Седона">
         </div>
-        <div class="short_desription">
-          <p class="strong"> Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+        <div class="short_description">
+          <p class="strong">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
 
-        <div class="row blue">
+        <div class="row blue clearfix">
           <div class="col_1">
             <p class="strong">Настоящий городок</p>
             <p>- №1 -</p>
@@ -51,21 +52,24 @@
             <img src="img/reason-one.jpg" alt="Седона - не аттракцион для туристов">
           </div>
         </div>
-        <div class="row">
-          <div class="col_1">
+        <div class="row clearfix">
+          <div class="col_1 type_two">
+            <div class="life_icon"></div>
             <p class="strong">Жилье</p>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
-          <div class="col_1">
+          <div class="col_1 type_two">
+            <div class="food_icon"></div>
             <p class="strong">Еда</p>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
-          <div class="col_1">
+          <div class="col_1 type_two">
+            <div class="souvenirs_icon"></div>
             <p class="strong">Сувениры</p>
             <p>Не только китайского, но и местного производства!</p>
           </div>
         </div>
-        <div class="row blue">
+        <div class="row blue clearfix">
           <div class="promo">
             <img src="img/reason-four.jpg" alt="Мост Дьявола">
           </div>
@@ -75,7 +79,7 @@
             <p>Да, по нему можно пройти! Если конечно Вы осмелитесь.</p>
           </div>
         </div>
-        <div class="row gray">
+        <div class="row gray clearfix">
           <div class="col_1">
             <p class="strong">Небольшая площадь</p>
             <p>- №3 -</p>
@@ -96,30 +100,40 @@
         <section class="search">
           <p class="strong">Заинтересовались?</p>
           <p>Укажите предполагаемую дату поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-          <a id="search_trigger" href="#">Поиск гостиницы в Седоне</a>
-          <form action="#" method="post">
-            <label for="check_in_date">Дата заезда:</label>
-            <input type="text" name="date_in" id="check_in_date"><br>
-            <label for="check_out_date">Дата выезда:</label>
-            <input type="text" name="date_out" id="check_out_date"><br>
-            <div class="adults_number">
-              <label for="adults_number">Взрослые</label>
-              <span class="minus">-</span>
-              <input type="text" name="adults" id="adults_number" value="2">
-              <span class="plus">+</span>
-            </div>
-            <div class="children_select">
-              <label for="children_in">Дети:</label>
-              <span class="minus">-</span>
-              <input type="text" name="children" id="children_in" value="0">
-              <span class="plus">+</span>
-            </div>
-            <input type="submit" value="Найти">
-          </form>
+          <div class="search_form">
+            <a id="search_trigger" href="#">Поиск гостиницы в Седоне</a>
+            <form action="#" method="post">
+              <div class="form_row">
+                <label for="check_in_date">Дата заезда:</label>
+                <input type="text" name="date_in" id="check_in_date"><br>
+              </div>
+              <div class="form_row">
+                <label for="check_out_date">Дата выезда:</label>
+                <input type="text" name="date_out" id="check_out_date"><br>
+              </div>
+              <div class="form_row bottom_row">
+                <div class="selection">
+                  <label class="adults" for="adults_number">Взрослые</label>
+                  <div class="adult_number minus">-</div>
+                  <input class="adult_number" type="text" name="adults" id="adults_number" value="2">
+                  <div class="adult_number plus">+</div>
+                </div>
+                <div class="selection">
+                  <label class="children" for="children_in">Дети:</label>
+                  <div class="children_number minus">-</div>
+                  <input class="children_number" type="text" name="children" id="children_in" value="0">
+                  <div class="children_number plus">+</div>
+                </div>
+              </div>
+              <input class="submit" type="submit" value="Найти">
+            </form>
+          </div>
         </section>
+
+        <div class="map"></div>
       </main>
 
-      <footer class="main_footer">
+      <footer class="main_footer footer clearfix">
         <section class="link">
           <a href="#">#VISITSEDONA</a>
         </section>
@@ -129,7 +143,7 @@
           <a href="#" class="social_yt">YouTube</a>
         </section>
         <section class="copyright">
-          Website by
+          <p>Website by</p>
           <a href="#"><img src="img/html-ac-logo-bl.png" alt="HTML Academy"></a>
         </section>
       </footer>
