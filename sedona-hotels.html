@@ -35,9 +35,9 @@
 
       <main>
         <form class="hotels" action="#" method="post">
-          <section class="column column_1">
+          <section class="column">
             <p class="strong">Инфраструктура</p>
-            <ul>
+            <ul class="options">
               <li>
                 <input type="checkbox" checked name="pool" id="waterpool">
                 <label for="waterpool">Бассейн</label>
@@ -52,9 +52,9 @@
               </li>
             </ul>
           </section>
-          <section class="column column_2">
+          <section class="column">
             <p class="strong">Тип жилья:</p>
-            <ul>
+            <ul class="options">
               <li>
                 <input type="checkbox" checked name="accommodation" id="hotel">
                 <label for="hotel">Отель</label>
@@ -69,13 +69,14 @@
               </li>
             </ul>
           </section>
+          <section class="column"></section>
           <section class="column column_3">
             <div class="price_selection">
               <p class="strong">Стоимость в сутки (Р):</p>
               <div class="range_filter">
                 <div class="price_controls">
-                  от <input class="min_price" type="text" value="0">
-                  до <input class="max_price" type="text" value="3000">
+                  от <input class="min_price" type="text" value="0" size="1">
+                  до <input class="max_price" type="text" value="3000" size="4">
                 </div>
                 <div class="range_controls">
                   <div class="scale"><div style="margin-left:0;width:317px;" class="bar"></div></div>
@@ -88,10 +89,10 @@
         </form>
 
         <section class="search_results">
-          <div class="row_01 layout_column clearfix">
+          <div class="row_01 clearfix">
             <div class="strong">Найдено: 3</div>
             <div class="sorting">
-              <p>Сортировка:</p>
+              <p class="strong">Сортировка:</p>
               <a class="active" href="#">По цене</a>
               <a href="#">По типу</a>
               <a href="#">По рейтингу</a>
@@ -103,7 +104,7 @@
           </div>
 
           <div class="hotel_preview">
-            <div class="row_02 clearfix">
+            <div class="row_01 clearfix">
               <div class="hotel_image">
                 <a href="#"><img src="img/amara-resort.jpg" alt="AMARA RESORT & SPA"></a>
               </div>
@@ -128,7 +129,7 @@
               </div>
             </div>
 
-            <div class="row_03 clearfix">
+            <div class="row_01 clearfix">
               <div class="hotel_image">
                 <a href="#"><img src="img/quail-inn.jpg" alt="DESERT QUAIL INN"></a>
               </div>
@@ -153,7 +154,7 @@
               </div>
             </div>
 
-            <div class="row_04 clearfix">
+            <div class="row_01 clearfix">
               <div class="hotel_image">
                 <a href="#"><img src="img/villas-at-poco.jpg" alt="VILLAS AT POCO DIABLO"></a>
               </div>
