@@ -5,6 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&subset=cyrillic" rel="stylesheet">
   </head>
 
   <body>
@@ -105,26 +106,26 @@
             <form action="#" method="post">
               <div class="form_row">
                 <label for="check_in_date">Дата заезда:</label>
-                <input type="text" name="date_in" id="check_in_date"><br>
+                <input class="date_in" type="text" name="date_in" id="check_in_date" value="24 апреля 2016">
+                <span class="icon_calendar"></span>
               </div>
               <div class="form_row">
                 <label for="check_out_date">Дата выезда:</label>
-                <input type="text" name="date_out" id="check_out_date"><br>
+                <input class="date_out icon_calendar" type="text" name="date_out" id="check_out_date" value="4 июля 2016">
+                <span class="icon_calendar"></span>
               </div>
-              <div class="form_row bottom_row">
-                <div class="selection">
-                  <label class="adults" for="adults_number">Взрослые</label>
-                  <div class="adult_number minus">-</div>
-                  <input class="adult_number" type="text" name="adults" id="adults_number" value="2">
-                  <div class="adult_number plus">+</div>
-                </div>
-                <div class="selection">
-                  <label class="children" for="children_in">Дети:</label>
-                  <div class="children_number minus">-</div>
-                  <input class="children_number" type="text" name="children" id="children_in" value="0">
-                  <div class="children_number plus">+</div>
-                </div>
+
+              <div class="bottom_row">
+                <label for="adults_number">Взрослые</label>
+                <button class="icon_minus"></button>
+                <input type="text" name="adults" id="adults_number" value="2">
+                <button class="icon_plus"></button>
+                <label class="children" for="children_in">Дети:</label>
+                <button class="icon_minus"></button>
+                <input class="children_number" type="text" name="children" id="children_in" value="0">
+                <button class="icon_plus"></button>
               </div>
+
               <input class="submit" type="submit" value="Найти">
             </form>
           </div>
@@ -138,13 +139,12 @@
           <a href="#">#VISITSEDONA</a>
         </section>
         <section class="social_links">
-          <a href="#" class="social_tw">Твиттер</a>
-          <a href="#" class="social_fb">Фейсбук</a>
-          <a href="#" class="social_yt">YouTube</a>
+          <a href="#" class="social_button">Твиттер<span class="icon_tw"></span></a>
+          <a href="#" class="social_button">Фейсбук<span class="icon_fb"></span></a>
+          <a href="#" class="social_button">YouTube<span class="icon_yt"></span></a>
         </section>
         <section class="copyright">
-          <p>Website by</p>
-          <a href="#"><img src="img/html-ac-logo-bl.png" alt="HTML Academy"></a>
+          <a href="#">Website by <img src="img/html-ac-logo-bl.png" alt="HTML Academy"></a>
         </section>
       </footer>
     </div>
