@@ -15,6 +15,11 @@ body {
   height: 100%;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   min-width: 768px;
   max-width: 1200px;
@@ -142,7 +147,7 @@ a {
 
 .row.gray {
   background-color: #eeeeee;
-  height: 212px;
+  min-height: 212px;
   padding-bottom: 42px;
 }
 
@@ -207,7 +212,7 @@ a {
 
 .type_two {
   padding-top: 52px;
-  height: 278px;
+  min-height: 278px;
 }
 
 .type_two .strong {
@@ -502,15 +507,10 @@ form.hotels {
 
 .hotels .column {
   float: left;
-  width: 22%;
+  width: 33.3333%;
   color: #ffffff;
   position: relative;
   padding-bottom: 29px;
-}
-
-.hotels .column_3 {
-  width: 30%;
-  float: right;
 }
 
 .hotels .strong {
@@ -556,7 +556,7 @@ input[type="checkbox"] + label::before {
   top: 0;
   left: 0;
   width: 10px;
-  height: 10px;
+  min-height: 10px;
   font-size: 24px;
   font-family: "symbols-sedona";
 }
@@ -793,6 +793,11 @@ input[type="checkbox"]:checked + label::before {
   color: #81b3d2;
 }
 
+.up_down .icon_up,
+.up-down .icon_down {
+  margin-right: -12px;
+}
+
 .hotel_image {
   float: left;
   max-width: 150px;
@@ -852,7 +857,7 @@ p.pricing {
 
 a.more {
   width: 110px;
-  height: 27px;
+  min-height: 27px;
   background-color: #81b3d2;
   padding-top: 5px;
   padding-right: 0;
@@ -860,7 +865,7 @@ a.more {
 
 a.more:hover {
   width: 110px;
-  height: 27px;
+  min-height: 27px;
   background-color: #669ec0;
   padding-top: 5px;
   padding-right: 0;
@@ -868,7 +873,7 @@ a.more:hover {
 
 a.more:active {
   width: 110px;
-  height: 27px;
+  min-height: 27px;
   background-color: #5496bd;
   padding-top: 5px;
   padding-right: 0;
@@ -877,7 +882,7 @@ a.more:active {
 
 a.book {
   width: 142px;
-  height: 27px;
+  min-height: 27px;
   background-color: #766357;
   padding-top: 5px;
   padding-right: 0;
@@ -885,7 +890,7 @@ a.book {
 
 a.book:hover {
   width: 142px;
-  height: 27px;
+  min-height: 27px;
   background-color: #604e43;
   padding-top: 5px;
   padding-right: 0;
@@ -893,7 +898,7 @@ a.book:hover {
 
 a.book:active {
   width: 142px;
-  height: 27px;
+  min-height: 27px;
   background-color: #503e33;
   padding-top: 5px;
   padding-right: 0;
@@ -902,7 +907,7 @@ a.book:active {
 
 .short_info .book {
   width: 142px;
-  height: 27px;
+  min-height: 27px;
 }
 
 .short_info .booking {
@@ -923,6 +928,7 @@ a.book:active {
 .hotel_rate span {
   font-size: 19px;
   color: #81b3d2;
+  margin-right: -3px;
 }
 
 div.rating {
@@ -930,7 +936,7 @@ div.rating {
   color: #666666;
   background-color: #f2f2f2;
   width: 110px;
-  height: 21px;
+  min-height: 21px;
   padding-top: 3px;
   padding-bottom: 3px;
   text-transform: uppercase;
@@ -1003,14 +1009,38 @@ div.rating {
   width: 33.3333%;
   margin: 0;
   padding: 0;
+  vertical-align: middle;
 }
 
-.copyright a.html_logo {
-  background-image: url("img/sprites.png");
-  background-position: -332px -65px;
+.copyright a {
   font-weight: normal;
-	width: 113px;
-	height: 39px;
+  display: inline-block;
+}
+
+.copyright span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.copyright span.html_logo {
+  background-image: url("../img/sprites.png");
+  background-position: -332px -65px;
+  height: 39px;
+  width: 113px;
+}
+
+.copyright span.html_logo:hover {
+  background-image: url("../img/sprites.png");
+  background-position: -334px -11px;
+  height: 39px;
+  width: 113px;
+}
+
+.copyright span.html_logo:active {
+  background-image: url("../img/sprites.png");
+  background-position: -472px -11px;
+  height: 39px;
+  width: 113px;
 }
 
 .clearfix::after {
