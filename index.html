@@ -103,7 +103,7 @@
           <p>Укажите предполагаемую дату поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
           <div class="search_form">
             <a id="search_trigger" href="#">Поиск гостиницы в Седоне</a>
-            <form action="#" method="post">
+            <form class="form_none" action="#" method="post">
               <div class="form_row">
                 <label for="check_in_date">Дата заезда:</label>
                 <input class="date_in" type="text" name="date_in" id="check_in_date" value="24 апреля 2016">
@@ -150,6 +150,26 @@
     </div>
   </body>
 
+  <script>
+    var search = document.querySelector("#search_trigger");
+    var popup = document.querySelector(".form_none");
+    var checkin = popup.querySelector("[name=date_in]");
+    var form = popup.querySelector("form");
+
+    search.addEventListener("click", function(event) {
+      event.preventDefault();
+      popup.classList.add("form_show");
+      checkin.focus();
+    });
+
+    window.addEventListener("keydown", function(event) {
+      if (event.keyCode === 27) {
+        if (popup.classList.contains("form_show")) {
+          popup.classList.remove("form_show");
+        }
+      }
+    });
+  </script>
     <!--<p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p> -->
 
 </html>

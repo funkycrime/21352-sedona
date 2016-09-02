@@ -280,9 +280,8 @@ a {
   padding-bottom: 36px;
 }
 
-.search_from {
+.search_form {
   position: relative;
-  top: 2084px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -302,8 +301,8 @@ a {
   padding-top: 32px;
 }
 
-form {
-  display: block;
+.form_none {
+  display: none;
   margin-right: auto;
   margin-left: auto;
   height: 395px;
@@ -318,6 +317,16 @@ form {
   padding-right: 55px;
   padding-bottom: 54px;
   font-size: 0;
+}
+
+.form_show {
+  display: block;
+  animation: slide_down 1.5s;
+}
+
+@keyframes slide_down {
+  0% {transform: translateY(-395px);}
+  100% {transform: translateY(0);}
 }
 
 .form_row {
