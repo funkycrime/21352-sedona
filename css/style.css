@@ -1001,20 +1001,16 @@ div.rating {
 .copyright {
   display: inline-block;
   width: 33.3333%;
-  vertical-align: middle;
-  text-align: center;
   margin: 0;
   padding: 0;
 }
 
-.copyright a::after {
-  background: url(".../img/sprites.png");
+.copyright a.html_logo {
+  background-image: url("img/sprites.png");
   background-position: -332px -65px;
+  font-weight: normal;
 	width: 113px;
 	height: 39px;
-  position: absolute;
-  left: 10px;
-  top: 20px;
 }
 
 .clearfix::after {
