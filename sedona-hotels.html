@@ -5,6 +5,7 @@
     <title>Отели в Седоне</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&subset=cyrillic" rel="stylesheet">
   </head>
 
   <body>
@@ -52,7 +53,7 @@
               </li>
             </ul>
           </section>
-          <section class="column">
+          <section class="column column_2">
             <p class="strong">Тип жилья:</p>
             <ul class="options">
               <li>
@@ -69,21 +70,21 @@
               </li>
             </ul>
           </section>
-          <section class="column"></section>
-          <section class="column column_3">
+          <section class="column">
             <div class="price_selection">
               <p class="strong">Стоимость в сутки (Р):</p>
-              <div class="range_filter">
-                <div class="price_controls">
-                  от <input class="min_price" type="text" value="0" size="1">
-                  до <input class="max_price" type="text" value="3000" size="4">
-                </div>
-                <div class="range_controls">
-                  <div class="scale"><div style="margin-left:0;width:317px;" class="bar"></div></div>
-                  <div class="toggle min_toggle"></div>
-                  <div class="toggle max_toggle"></div>
-                </div>
+              <div class="price_controls">
+                <label class="min_price">от <input type="text" name="min_price" value="0"></label>
+                <label class="max_price">до <input type="text" name="max_price" value="3000"></label>
               </div>
+              <div class="range_controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle min_toggle"></div>
+                <div class="toggle max_toggle"></div>
+              </div>
+              <div class="button" type="submit">Показать</div>
             </div>
           </section>
         </form>
@@ -98,85 +99,83 @@
               <a href="#">По рейтингу</a>
             </div>
             <div class="up_down">
-              <a href="#">...</a> <!--Стрелочка вверх -->
-              <a href="#">...</a> <!--Стрелочка вниз -->
+              <a href="#" class="icon_up"></a>
+              <a href="#" class="icon_down active"></a>
             </div>
           </div>
 
-          <div class="hotel_preview">
-            <div class="row_01 clearfix">
-              <div class="hotel_image">
-                <a href="#"><img src="img/amara-resort.jpg" alt="AMARA RESORT & SPA"></a>
-              </div>
-              <div class="hotel_info">
-                <div class="short_info">
-                  <h2>AMARA RESORT & SPA</h2>
-                  <div class="hotel_type">
-                    <p class="hotel">Гостиница</p>
-                    <p class="pricing">От 3500 Р.</p>
-                  </div>
-                  <div class="booking">
-                    <a class="more" href="#">Подробнее</a>
-                    <a class="book" href="#">Забронировать</a>
-                  </div>
+          <div class="row_01 clearfix">
+            <div class="hotel_image">
+              <a href="#"><img src="img/amara-resort.jpg" alt="AMARA RESORT & SPA"></a>
+            </div>
+            <div class="hotel_info">
+              <div class="short_info">
+                <h2>AMARA RESORT & SPA</h2>
+                <div class="hotel_type">
+                  <p class="hotel">Гостиница</p>
+                  <p class="pricing">От 3500 Р.</p>
                 </div>
-              </div>
-              <div class="hotel_rate">
-                <div class="stars">
-                  <span class="icon_star"></span> <!--Звездочки -->
+                <div class="booking">
+                  <a class="more" href="#">Подробнее</a>
+                  <a class="book" href="#">Забронировать</a>
                 </div>
-                <div class="rating">Рейтинг: 8,5</div>
               </div>
             </div>
+            <div class="hotel_rate">
+              <div class="stars">
+                <span class="icon_star"></span><span class="icon_star"></span><span class="icon_star"></span><span class="icon_star"></span>
+              </div>
+              <div class="rating">Рейтинг: 8,5</div>
+            </div>
+          </div>
 
-            <div class="row_01 clearfix">
-              <div class="hotel_image">
-                <a href="#"><img src="img/quail-inn.jpg" alt="DESERT QUAIL INN"></a>
-              </div>
-              <div class="hotel_info">
-                <div class="short_info">
-                  <h2>DESERT QUAIL INN</h2>
-                  <div class="hotel_type">
-                    <p class="motel">Мотель</p>
-                    <p class="pricing">От 2000 Р.</p>
-                  </div>
-                  <div class="booking">
-                    <a class="more" href="#">Подробнее</a>
-                    <a class="book" href="#">Забронировать</a>
-                  </div>
+          <div class="row_01 clearfix">
+            <div class="hotel_image">
+              <a href="#"><img src="img/quail-inn.jpg" alt="DESERT QUAIL INN"></a>
+            </div>
+            <div class="hotel_info">
+              <div class="short_info">
+                <h2>DESERT QUAIL INN</h2>
+                <div class="hotel_type">
+                  <p class="motel">Мотель</p>
+                  <p class="pricing">От 2000 Р.</p>
                 </div>
-              </div>
-              <div class="hotel_rate">
-                <div class="stars">
-                  <span class="icon_star"></span> <!--Звездочки -->
+                <div class="booking">
+                  <a class="more" href="#">Подробнее</a>
+                  <a class="book" href="#">Забронировать</a>
                 </div>
-                <div class="rating">Рейтинг: 8,9</div>
               </div>
             </div>
+            <div class="hotel_rate">
+              <div class="stars">
+                <span class="icon_star"></span><span class="icon_star"></span>
+              </div>
+              <div class="rating">Рейтинг: 8,9</div>
+            </div>
+          </div>
 
-            <div class="row_01 clearfix">
-              <div class="hotel_image">
-                <a href="#"><img src="img/villas-at-poco.jpg" alt="VILLAS AT POCO DIABLO"></a>
-              </div>
-              <div class="hotel_info">
-                <div class="short_info">
-                  <h2>VILLAS AT POCO DIABLOS</h2>
-                  <div class="hotel_type">
-                    <p class="apartment">Апартаменты</p>
-                    <p class="pricing">От 4000 Р.</p>
-                  </div>
-                  <div class="booking">
-                    <a class="more" href="#">Подробнее</a>
-                    <a class="book" href="#">Забронировать</a>
-                  </div>
+          <div class="row_01 clearfix">
+            <div class="hotel_image">
+              <a href="#"><img src="img/villas-at-poco.jpg" alt="VILLAS AT POCO DIABLO"></a>
+            </div>
+            <div class="hotel_info">
+              <div class="short_info">
+                <h2>VILLAS AT POCO DIABLOS</h2>
+                <div class="hotel_type">
+                  <p class="apartment">Апартаменты</p>
+                  <p class="pricing">От 4000 Р.</p>
+                </div>
+                <div class="booking">
+                  <a class="more" href="#">Подробнее</a>
+                  <a class="book" href="#">Забронировать</a>
                 </div>
               </div>
-              <div class="hotel_rate">
-                <div class="stars">
-                  <span class="icon_star"></span> <!--Звездочки-->
-                </div>
-                <div class="rating">Рейтинг: 9,2</div>
+            </div>
+            <div class="hotel_rate">
+              <div class="stars">
+                <span class="icon_star"></span><span class="icon_star"></span><span class="icon_star"></span>
               </div>
+              <div class="rating">Рейтинг: 9,2</div>
             </div>
           </div>
         </section>
@@ -187,13 +186,12 @@
           <a href="#">#VISITSEDONA</a>
         </section>
         <section class="social_links">
-          <a href="#" class="social_tw">Твиттер</a>
-          <a href="#" class="social_fb">Фейсбук</a>
-          <a href="#" class="social_yt">YouTube</a>
+          <a href="#" class="social_button">Твиттер<span class="icon_tw"></span></a>
+          <a href="#" class="social_button">Фейсбук<span class="icon_fb"></span></a>
+          <a href="#" class="social_button">YouTube<span class="icon_yt"></span></a>
         </section>
         <section class="copyright">
-          Website by
-          <a href="#"><img src="img/html-ac-logo-bl.png" alt="HTML Academy"></a>
+          <a href="http://www.htmlacademy.ru">Website by <span class="icon html_logo"></span></a>
         </section>
       </footer>
     </div>

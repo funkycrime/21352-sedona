@@ -1,40 +1,40 @@
-.food, .hotels, .souvenirs, .html-ac-logo, .html-ac-logo-bl, .html-ac-logo-light-blue{
+.html-ac-logo, .html-ac-logo-bl, .html-ac-logo-light-blue, .food, .hotels, .souvenirs{
 	background: url(sprites.png) no-repeat;
 }
 
-.food{
-	background-position: 0 0;
-	width: 74px;
-	height: 70px;
-}
-
-.hotels{
-	background-position: -100px -1px ;
-	width: 75px;
-	height: 72px;
-}
-
-.souvenirs{
-	background-position: -200px 0;
-	width: 64px;
-	height: 76px;
-}
-
 .html-ac-logo{
-	background-position: -300px 0;
+	background-position: -472px -11px ;
 	width: 113px;
 	height: 39px;
 }
 
 .html-ac-logo-bl{
-	background-position: -301px -51px ;
+	background-position: -332px -65px ;
 	width: 113px;
 	height: 39px;
 }
 
 .html-ac-logo-light-blue{
-	background-position: -450px -1px ;
+	background-position: -334px -11px ;
 	width: 113px;
 	height: 39px;
+}
+
+.food{
+	background-position: -223px -12px ;
+	width: 80px;
+	height: 80px;
+}
+
+.hotels{
+	background-position: -112px -12px ;
+	width: 80px;
+	height: 80px;
+}
+
+.souvenirs{
+	background-position: -7px -11px ;
+	width: 80px;
+	height: 80px;
 }
 

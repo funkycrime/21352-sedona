@@ -5,6 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&subset=cyrillic" rel="stylesheet">
   </head>
 
   <body>
@@ -102,29 +103,29 @@
           <p>Укажите предполагаемую дату поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
           <div class="search_form">
             <a id="search_trigger" href="#">Поиск гостиницы в Седоне</a>
-            <form action="#" method="post">
+            <form class="form_none" action="#" method="post">
               <div class="form_row">
                 <label for="check_in_date">Дата заезда:</label>
-                <input type="text" name="date_in" id="check_in_date"><br>
+                <input class="date_in" type="text" name="date_in" id="check_in_date" value="24 апреля 2016">
+                <span class="icon_calendar"></span>
               </div>
               <div class="form_row">
                 <label for="check_out_date">Дата выезда:</label>
-                <input type="text" name="date_out" id="check_out_date"><br>
+                <input class="date_out icon_calendar" type="text" name="date_out" id="check_out_date" value="4 июля 2016">
+                <span class="icon_calendar"></span>
               </div>
-              <div class="form_row bottom_row">
-                <div class="selection">
-                  <label class="adults" for="adults_number">Взрослые</label>
-                  <div class="adult_number minus">-</div>
-                  <input class="adult_number" type="text" name="adults" id="adults_number" value="2">
-                  <div class="adult_number plus">+</div>
-                </div>
-                <div class="selection">
-                  <label class="children" for="children_in">Дети:</label>
-                  <div class="children_number minus">-</div>
-                  <input class="children_number" type="text" name="children" id="children_in" value="0">
-                  <div class="children_number plus">+</div>
-                </div>
+
+              <div class="bottom_row">
+                <label for="adults_number">Взрослые</label>
+                <button class="icon_minus"></button>
+                <input type="text" name="adults" id="adults_number" value="2">
+                <button class="icon_plus"></button>
+                <label class="children" for="children_in">Дети:</label>
+                <button class="icon_minus"></button>
+                <input class="children_number" type="text" name="children" id="children_in" value="0">
+                <button class="icon_plus"></button>
               </div>
+
               <input class="submit" type="submit" value="Найти">
             </form>
           </div>
@@ -138,18 +139,37 @@
           <a href="#">#VISITSEDONA</a>
         </section>
         <section class="social_links">
-          <a href="#" class="social_tw">Твиттер</a>
-          <a href="#" class="social_fb">Фейсбук</a>
-          <a href="#" class="social_yt">YouTube</a>
+          <a href="#" class="social_button">Твиттер<span class="icon_tw"></span></a>
+          <a href="#" class="social_button">Фейсбук<span class="icon_fb"></span></a>
+          <a href="#" class="social_button">YouTube<span class="icon_yt"></span></a>
         </section>
         <section class="copyright">
-          <p>Website by</p>
-          <a href="#"><img src="img/html-ac-logo-bl.png" alt="HTML Academy"></a>
+          <a href="http://www.htmlacademy.ru">Website by <span class="icon html_logo"></span></a>
         </section>
       </footer>
     </div>
   </body>
 
+  <script>
+    var search = document.querySelector("#search_trigger");
+    var popup = document.querySelector(".form_none");
+    var checkin = popup.querySelector("[name=date_in]");
+    var form = popup.querySelector("form");
+
+    search.addEventListener("click", function(event) {
+      event.preventDefault();
+      popup.classList.add("form_show");
+      checkin.focus();
+    });
+
+    window.addEventListener("keydown", function(event) {
+      if (event.keyCode === 27) {
+        if (popup.classList.contains("form_show")) {
+          popup.classList.remove("form_show");
+        }
+      }
+    });
+  </script>
     <!--<p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p> -->
 
 </html>
