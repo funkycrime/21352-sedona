@@ -290,6 +290,7 @@ li.center {
   position: relative;
   margin-right: auto;
   margin-left: auto;
+  z-index: 1;
 }
 
 .search a {
@@ -322,6 +323,7 @@ form {
   margin-right: auto;
   margin-left: auto;
   font-size: 0;
+  z-index: -1;
 }
 
 .form_none {
