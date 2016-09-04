@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Отели в Седоне</title>
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style_min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&subset=cyrillic" rel="stylesheet">
   </head>
 
@@ -70,7 +70,7 @@
               </li>
             </ul>
           </section>
-          <section class="column">
+          <section class="column column_3">
             <div class="price_selection">
               <p class="strong">Стоимость в сутки (Р):</p>
               <div class="price_controls">
@@ -84,7 +84,7 @@
                 <div class="toggle min_toggle"></div>
                 <div class="toggle max_toggle"></div>
               </div>
-              <div class="button" type="submit">Показать</div>
+              <input class="button" type="submit" value="Показать">
             </div>
           </section>
         </form>
@@ -106,11 +106,11 @@
 
           <div class="row_01 clearfix">
             <div class="hotel_image">
-              <a href="#"><img src="img/amara-resort.jpg" alt="AMARA RESORT & SPA"></a>
+              <a href="#"><img src="img/amara-resort.jpg" width="135" height="90" title="Amara" alt="AMARA RESORT & SPA"></a>
             </div>
             <div class="hotel_info">
               <div class="short_info">
-                <h2>AMARA RESORT & SPA</h2>
+                <a class="hotel_name clearfix" href="#">AMARA RESORT & SPA</a>
                 <div class="hotel_type">
                   <p class="hotel">Гостиница</p>
                   <p class="pricing">От 3500 Р.</p>
@@ -131,11 +131,11 @@
 
           <div class="row_01 clearfix">
             <div class="hotel_image">
-              <a href="#"><img src="img/quail-inn.jpg" alt="DESERT QUAIL INN"></a>
+              <a href="#"><img src="img/quail-inn.jpg" width="135" height="90" title="Quail" alt="DESERT QUAIL INN"></a>
             </div>
             <div class="hotel_info">
               <div class="short_info">
-                <h2>DESERT QUAIL INN</h2>
+                <a class="hotel_name clearfix" href="#">DESERT QUAIL INN</a>
                 <div class="hotel_type">
                   <p class="motel">Мотель</p>
                   <p class="pricing">От 2000 Р.</p>
@@ -156,11 +156,11 @@
 
           <div class="row_01 clearfix">
             <div class="hotel_image">
-              <a href="#"><img src="img/villas-at-poco.jpg" alt="VILLAS AT POCO DIABLO"></a>
+              <a href="#"><img src="img/villas-at-poco.jpg" width="135" height="90" title="Poco" alt="VILLAS AT POCO DIABLO"></a>
             </div>
             <div class="hotel_info">
               <div class="short_info">
-                <h2>VILLAS AT POCO DIABLOS</h2>
+                <a class="hotel_name clearfix" href="#">VILLAS AT POCO DIABLOS</a>
                 <div class="hotel_type">
                   <p class="apartment">Апартаменты</p>
                   <p class="pricing">От 4000 Р.</p>
@@ -183,7 +183,7 @@
 
       <footer class="main_footer clearfix">
         <section class="link">
-          <a href="#">#VISITSEDONA</a>
+          <a class="hash" href="#">#VISITSEDONA</a>
         </section>
         <section class="social_links">
           <a href="#" class="social_button">Твиттер<span class="icon_tw"></span></a>
@@ -191,7 +191,7 @@
           <a href="#" class="social_button">YouTube<span class="icon_yt"></span></a>
         </section>
         <section class="copyright">
-          <a href="http://www.htmlacademy.ru">Website by <span class="icon html_logo"></span></a>
+          <a href="http://www.htmlacademy.ru">Website by <div class="icon html_logo"></div></a>
         </section>
       </footer>
     </div>
