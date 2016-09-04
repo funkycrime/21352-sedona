@@ -1,6 +1,6 @@
 var search = document.querySelector("#search_trigger");
 var popup = document.querySelector("form");
-var form = popup.querySelector("form");
+var form = popup.querySelector(".form_none");
 var checkin = popup.querySelector(".date_in");
 var chekout = popup.querySelector(".date_out");
 
